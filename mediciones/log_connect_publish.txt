@@ -1,0 +1,25 @@
+Sep 24 01:16:27 vm-lab2-python python[2776]: 01:16:27 [ACK #63] PUBACK en 137 ms (qos=1)
+Sep 24 01:16:32 vm-lab2-python python[2776]: 01:16:32 [TX #64] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=53 payload={"temperature":30.0,"humedad":47.5,"illuminance":490}
+Sep 24 01:16:32 vm-lab2-python python[2776]: 01:16:32 [ACK #64] PUBACK en 146 ms (qos=1)
+Sep 24 01:16:37 vm-lab2-python python[2776]: 01:16:37 [TX #65] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=53 payload={"temperature":29.8,"humedad":59.5,"illuminance":523}
+Sep 24 01:16:37 vm-lab2-python python[2776]: 01:16:37 [ACK #65] PUBACK en 141 ms (qos=1)
+Sep 24 01:16:42 vm-lab2-python python[2776]: 01:16:42 [TX #66] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=53 payload={"temperature":20.5,"humedad":44.9,"illuminance":337}
+Sep 24 01:16:42 vm-lab2-python python[2776]: 01:16:42 [ACK #66] PUBACK en 139 ms (qos=1)
+Sep 24 01:16:47 vm-lab2-python python[2776]: 01:16:47 [TX #67] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=53 payload={"temperature":20.6,"humedad":41.4,"illuminance":158}
+Sep 24 01:16:47 vm-lab2-python python[2776]: 01:16:47 [ACK #67] PUBACK en 138 ms (qos=1)
+Sep 24 01:16:52 vm-lab2-python python[2776]: 01:16:52 [TX #68] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=53 payload={"temperature":29.1,"humedad":52.4,"illuminance":403}
+Sep 24 01:16:52 vm-lab2-python python[2776]: 01:16:52 [ACK #68] PUBACK en 133 ms (qos=1)
+Sep 24 01:16:57 vm-lab2-python python[2776]: 01:16:57 [TX #69] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=53 payload={"temperature":26.1,"humedad":46.7,"illuminance":284}
+Sep 24 01:16:57 vm-lab2-python python[2776]: 01:16:57 [ACK #69] PUBACK en 151 ms (qos=1)
+Sep 24 01:17:02 vm-lab2-python python[2776]: 01:17:02 [TX #70] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=53 payload={"temperature":27.1,"humedad":51.5,"illuminance":226}
+Sep 24 01:17:02 vm-lab2-python python[2776]: 01:17:02 [ACK #70] PUBACK en 132 ms (qos=1)
+Sep 24 01:17:07 vm-lab2-python python[2776]: 01:17:07 [TX #71] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=53 payload={"temperature":26.9,"humedad":65.3,"illuminance":444}
+Sep 24 01:17:07 vm-lab2-python python[2776]: 01:17:07 [ACK #71] PUBACK en 141 ms (qos=1)
+Sep 24 01:17:12 vm-lab2-python python[2776]: 01:17:12 [TX #72] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=53 payload={"temperature":31.4,"humedad":48.6,"illuminance":558}
+Sep 24 01:17:12 vm-lab2-python python[2776]: 01:17:12 [ACK #72] PUBACK en 140 ms (qos=1)
+Sep 24 01:17:17 vm-lab2-python python[2776]: 01:17:17 [TX #73] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=53 payload={"temperature":20.4,"humedad":56.4,"illuminance":416}
+Sep 24 01:17:17 vm-lab2-python python[2776]: 01:17:17 [ACK #73] PUBACK en 135 ms (qos=1)
+Sep 24 01:17:22 vm-lab2-python python[2776]: 01:17:22 [TX #74] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=53 payload={"temperature":26.5,"humedad":60.6,"illuminance":543}
+Sep 24 01:17:22 vm-lab2-python python[2776]: 01:17:22 [ACK #74] PUBACK en 137 ms (qos=1)
+Sep 24 01:17:27 vm-lab2-python python[2776]: 01:17:27 [TX #75] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=53 payload={"temperature":20.7,"humedad":42.1,"illuminance":549}
+Sep 24 01:17:27 vm-lab2-python python[2776]: 01:17:27 [ACK #75] PUBACK en 143 ms (qos=1)

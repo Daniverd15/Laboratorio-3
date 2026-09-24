@@ -1,0 +1,41 @@
+01:03:54 [SAS] Token de DPS generado (sr=0ne00FDCA1E/registrations/mqtt-explicito-lab3, expira en 3600s)
+01:03:54 [DPS] Conectando por MQTT/TLS a global.azure-devices-provisioning.net:8883 ...
+01:03:54 [DPS] CONNACK rc=0 -> suscribiendo a $dps/registrations/res/#
+01:03:54 [DPS] PUBLISH registro -> $dps/registrations/PUT/iotdps-register/ ({"registrationId": "mqtt-explicito-lab3"})
+01:03:54 [DPS] 202 Assigning... operationId recibido, consultando estado
+01:03:56 [DPS] 200 assigned -> hub=iotc-afe94d46-6329-4fa6-bcce-2b3db5baac5b.azure-devices.net  status=assigned
+01:03:56 [SAS] Token de IoT Hub generado (sr=iotc-afe94d46-6329-4fa6-bcce-2b3db5baac5b.azure-devices.net/devices/mqtt-explicito-lab3)
+01:03:56 [HUB] Conectando por MQTT/TLS a iotc-afe94d46-6329-4fa6-bcce-2b3db5baac5b.azure-devices.net:8883  (QoS=1)
+01:03:56 [HUB] CONNACK rc=0 (conectado)
+01:03:56 [HUB] Suscrito a metodos directos: $iothub/methods/POST/#
+01:03:56 [TX #1] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=54 payload={"temperature":28.1,"humidity":51.4,"illuminance":188}
+01:03:56 [ACK #1] PUBACK en 142 ms (qos=1)
+01:03:59 [TX #2] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=54 payload={"temperature":27.5,"humidity":42.9,"illuminance":319}
+01:03:59 [ACK #2] PUBACK en 133 ms (qos=1)
+01:04:02 [TX #3] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=54 payload={"temperature":24.6,"humidity":69.0,"illuminance":516}
+01:04:02 [ACK #3] PUBACK en 137 ms (qos=1)
+01:04:05 [TX #4] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=54 payload={"temperature":20.2,"humidity":46.5,"illuminance":612}
+01:04:05 [ACK #4] PUBACK en 138 ms (qos=1)
+01:04:08 [TX #5] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=54 payload={"temperature":24.1,"humidity":50.1,"illuminance":424}
+01:04:08 [HUB] DESCONECTADO (rc=7). paho intentara reconectar con backoff...
+01:04:11 [TX #6] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=54 payload={"temperature":21.3,"humidity":69.7,"illuminance":179}
+01:04:14 [TX #7] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=54 payload={"temperature":25.1,"humidity":55.9,"illuminance":441}
+01:04:17 [TX #8] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=54 payload={"temperature":30.9,"humidity":56.2,"illuminance":236}
+01:04:20 [TX #9] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=54 payload={"temperature":30.3,"humidity":56.5,"illuminance":364}
+01:04:23 [TX #10] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=54 payload={"temperature":23.0,"humidity":66.4,"illuminance":563}
+01:04:24 [HUB] CONNACK rc=0 (conectado)
+01:04:24 [HUB] Suscrito a metodos directos: $iothub/methods/POST/#
+01:04:24 [ACK #5] PUBACK en 15395 ms (qos=1)
+01:04:24 [ACK #6] PUBACK en 12490 ms (qos=1)
+01:04:24 [ACK #7] PUBACK en 9487 ms (qos=1)
+01:04:24 [ACK #8] PUBACK en 6483 ms (qos=1)
+01:04:24 [ACK #9] PUBACK en 3480 ms (qos=1)
+01:04:24 [ACK #10] PUBACK en 477 ms (qos=1)
+01:04:26 [TX #11] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=54 payload={"temperature":27.2,"humidity":65.3,"illuminance":566}
+01:04:26 [ACK #11] PUBACK en 159 ms (qos=1)
+01:04:29 [TX #12] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=54 payload={"temperature":28.5,"humidity":52.6,"illuminance":352}
+01:04:29 [ACK #12] PUBACK en 130 ms (qos=1)
+01:04:32 [TX #13] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=54 payload={"temperature":23.2,"humidity":61.6,"illuminance":511}
+01:04:32 [ACK #13] PUBACK en 133 ms (qos=1)
+01:04:35 [TX #14] topic=devices/mqtt-explicito-lab3/messages/events/ qos=1 bytes=54 payload={"temperature":20.5,"humidity":44.6,"illuminance":672}
+01:04:35 [ACK #14] PUBACK en 144 ms (qos=1)

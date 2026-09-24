@@ -1,0 +1,17 @@
+[Unit]
+Description=UNAB-Ambiental Lab3 - cliente MQTT explicito (paho) hacia IoT Central
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=azureuser
+WorkingDirectory=/home/azureuser/laboratorio3/mqtt
+EnvironmentFile=/home/azureuser/laboratorio3/mqtt/.env
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/azureuser/laboratorio2/python/.venv/bin/python /home/azureuser/laboratorio3/mqtt/mqtt_explicito.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

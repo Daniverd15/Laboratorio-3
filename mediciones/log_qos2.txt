@@ -1,0 +1,20 @@
+01:00:54 [SAS] Token de DPS generado (sr=0ne00FDCA1E/registrations/mqtt-explicito-lab3, expira en 3600s)
+01:00:54 [DPS] Conectando por MQTT/TLS a global.azure-devices-provisioning.net:8883 ...
+01:00:55 [DPS] CONNACK rc=0 -> suscribiendo a $dps/registrations/res/#
+01:00:55 [DPS] PUBLISH registro -> $dps/registrations/PUT/iotdps-register/ ({"registrationId": "mqtt-explicito-lab3"})
+01:00:55 [DPS] 202 Assigning... operationId recibido, consultando estado
+01:00:57 [DPS] 200 assigned -> hub=iotc-afe94d46-6329-4fa6-bcce-2b3db5baac5b.azure-devices.net  status=assigned
+01:00:57 [SAS] Token de IoT Hub generado (sr=iotc-afe94d46-6329-4fa6-bcce-2b3db5baac5b.azure-devices.net/devices/mqtt-explicito-lab3)
+01:00:57 [HUB] Conectando por MQTT/TLS a iotc-afe94d46-6329-4fa6-bcce-2b3db5baac5b.azure-devices.net:8883  (QoS=2)
+01:00:57 [HUB] CONNACK rc=0 (conectado)
+01:00:57 [HUB] Suscrito a metodos directos: $iothub/methods/POST/#
+01:00:57 [TX #1] topic=devices/mqtt-explicito-lab3/messages/events/ qos=2 bytes=54 payload={"temperature":23.3,"humidity":59.8,"illuminance":507}
+01:00:57 [ACK #1] PUBACK en 132 ms (qos=2)
+01:00:59 [TX #2] topic=devices/mqtt-explicito-lab3/messages/events/ qos=2 bytes=54 payload={"temperature":25.5,"humidity":45.8,"illuminance":525}
+01:00:59 [ACK #2] PUBACK en 137 ms (qos=2)
+01:01:01 [TX #3] topic=devices/mqtt-explicito-lab3/messages/events/ qos=2 bytes=54 payload={"temperature":29.7,"humidity":69.1,"illuminance":539}
+01:01:01 [ACK #3] PUBACK en 142 ms (qos=2)
+01:01:03 [HUB] DESCONECTADO (rc=0). paho intentara reconectar con backoff...
+01:01:03 ---- RESUMEN ----
+01:01:03 [MED] mensajes=3  payload_bytes: min=54 max=54 prom=54.0  QoS=2
+01:01:03 [MED] latencia PUBACK ms: min=132 max=142 prom=137 (n=3)

@@ -1,0 +1,22 @@
+$ IOTC_QOS=2 IOTC_DEBUG=1 python mqtt_explicito.py
+01:02:00 [DPS] Conectando por MQTT/TLS a global.azure-devices-provisioning.net:8883 ...
+01:02:00 [DPS] CONNACK rc=0 -> suscribiendo a $dps/registrations/res/#
+01:02:02 [HUB] Conectando por MQTT/TLS a iotc-afe94d46-...azure-devices.net:8883  (QoS=2)
+01:02:02 [MQTT] Sending CONNECT (u1, p1, wr0, wq0, wf0, c1, k120) client_id=b'mqtt-explicito-lab3'
+01:02:02 [MQTT] Received CONNACK (0, 0)
+01:02:02 [HUB] CONNACK rc=0 (conectado)
+01:02:02 [MQTT] Sending SUBSCRIBE (d0, m1) [(b'$iothub/methods/POST/#', 0)]
+01:02:02 [MQTT] Received SUBACK
+01:02:02 [MQTT] Sending PUBLISH (d0, q2, r0, m2), 'devices/mqtt-explicito-lab3/messages/events/', ... (54 bytes)
+01:02:02 [TX #1] topic=devices/mqtt-explicito-lab3/messages/events/ qos=2 bytes=54
+01:02:02 [MQTT] Received PUBACK (Mid: 2)      <-- IoT Hub responde PUBACK (ack de QoS 1)
+01:02:02 [ACK #1] PUBACK en 132 ms (qos=2)        NO envia PUBREC: no hay handshake QoS 2
+01:02:04 [MQTT] Sending PUBLISH (d0, q2, r0, m3), 'devices/mqtt-explicito-lab3/messages/events/', ... (54 bytes)
+01:02:04 [TX #2] topic=devices/mqtt-explicito-lab3/messages/events/ qos=2 bytes=54
+01:02:04 [MQTT] Received PUBACK (Mid: 3)      <-- de nuevo PUBACK, no PUBREC
+01:02:04 [ACK #2] PUBACK en 135 ms (qos=2)
+01:02:06 [MQTT] Sending DISCONNECT
+
+CONCLUSION: al publicar con QoS 2, IoT Hub responde con PUBACK (el acuse de QoS 1)
+en lugar de PUBREC/PUBREL/PUBCOMP. Es decir, NO implementa el handshake de QoS 2:
+la publicacion se degrada de facto a QoS 1 y NO se obtiene la garantia exactly-once.

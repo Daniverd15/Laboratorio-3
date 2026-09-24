@@ -1,0 +1,8 @@
+Sep 24 01:16:50 vm-lab2-python python[2775]: [TX] {'temperature': 20.9, 'humedad': 68.4, 'illuminance': 373}  (cada 5s)
+Sep 24 01:16:55 vm-lab2-python python[2775]: [TX] {'temperature': 27.6, 'humedad': 46.4, 'illuminance': 195}  (cada 5s)
+Sep 24 01:17:00 vm-lab2-python python[2775]: [TX] {'temperature': 20.8, 'humedad': 48.7, 'illuminance': 590}  (cada 5s)
+Sep 24 01:17:06 vm-lab2-python python[2775]: [TX] {'temperature': 23.6, 'humedad': 40.7, 'illuminance': 702}  (cada 5s)
+Sep 24 01:17:11 vm-lab2-python python[2775]: [TX] {'temperature': 20.4, 'humedad': 69.8, 'illuminance': 354}  (cada 5s)
+Sep 24 01:17:16 vm-lab2-python python[2775]: [TX] {'temperature': 26.2, 'humedad': 48.2, 'illuminance': 663}  (cada 5s)
+Sep 24 01:17:21 vm-lab2-python python[2775]: [TX] {'temperature': 20.9, 'humedad': 51.2, 'illuminance': 218}  (cada 5s)
+Sep 24 01:17:26 vm-lab2-python python[2775]: [TX] {'temperature': 23.1, 'humedad': 47.2, 'illuminance': 408}  (cada 5s)
