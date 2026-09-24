@@ -274,7 +274,7 @@ void publishTelemetry() {
 
   StaticJsonDocument<128> doc;
   doc["temperature"] = t;
-  doc["humidity"]    = h;
+  doc["humedad"]    = h;
   doc["illuminance"] = lux;
 
   char buf[128];

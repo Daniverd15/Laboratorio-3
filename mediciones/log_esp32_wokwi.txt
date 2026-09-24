@@ -1,0 +1,36 @@
+Wokwi CLI v0.27.1 (ffde06bde1ae)
+Connected to Wokwi Simulation API 1.0.0-20260923-g15f04eb5
+Starting simulation...
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+[WiFi] Conectando a Wokwi-GUEST ...
+...
+[WiFi] OK  IP=10.13.37.2
+[TIME] Sincronizando NTP........
+[TIME] epoch=1790217131
+[DPS] Iniciando aprovisionamiento...
+[DPS] Conectando a DPS...
+[DPS] Conectado.
+[DPS] status=assigned
+[DPS] assignedHub = iotc-afe94d46-6329-4fa6-bcce-2b3db5baac5b.azure-devices.net
+[HUB] Conectando al IoT Hub...
+[HUB] Conectado. (Connected en IoT Central)
+[TX] {"temperature":24,"humedad":40,"illuminance":48}
+[TX] {"temperature":24,"humedad":40,"illuminance":48}
+[TX] {"temperature":24,"humedad":40,"illuminance":48}
+[TX] {"temperature":24,"humedad":40,"illuminance":48}
+[TX] {"temperature":24,"humedad":40,"illuminance":48}
+[TX] {"temperature":24,"humedad":40,"illuminance":48}
+[TX] {"temperature":24,"humedad":40,"illuminance":48}
+[TX] {"temperature":24,"humedad":40,"illuminance":48}
+[TX] {"temperature":24,"humedad":40,"illuminance":48}
+
+Timeout: simulation did not finish in 65000ms
