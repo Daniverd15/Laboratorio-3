@@ -52,6 +52,10 @@ laboratorio3/
 │   └── .env.example              (plantilla de variables; SIN claves)
 ├── sdk/
 │   └── IoTCentralSender.py       (copia del dispositivo SDK del Lab 2, línea base)
+├── wokwi/                        (proyecto ESP32 del Lab 2: firmware MQTT explícito)
+│   ├── sketch.ino / src/main.cpp (DPS + SAS por mbedTLS + PubSubClient)
+│   ├── diagram.json  platformio.ini  wokwi.toml  libraries.txt
+│   └── README_VSCODE.md
 ├── mediciones/                   (logs y CSV reales de las corridas)
 │   ├── log_qos1.txt  log_qos0.txt  log_qos2_debug.txt  log_corte.txt
 │   └── qos0.csv  qos1.csv
@@ -129,5 +133,10 @@ restablecer **reconecta solo (~2 s)** y hace *flush* de todo lo pendiente
 | + 6 simulados | — | Flota del Lab 1/2 |
 
 > El firmware del ESP32 **no cambió** respecto al Lab 2 (ya es MQTT explícito con
-> PubSubClient + SAS por mbedTLS), por eso se reutiliza el proyecto de
-> `laboratorio2/wokwi/`.
+> PubSubClient + SAS por mbedTLS), por eso se reutiliza tal cual; se incluye una
+> copia en [`wokwi/`](wokwi/) para que el repositorio quede autocontenido.
+
+---
+
+**Repositorio:** <https://github.com/Daniverd15/Laboratorio-3>
+**Continúa:** Lab 1 (app + plantilla) y Lab 2 (flota + Python en VM de Azure + ESP32).

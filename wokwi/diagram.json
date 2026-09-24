@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "author": "UNAB-Ambiental - Laboratorio 2",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp32", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -120, "left": 200, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 90, "left": 210,
+      "attrs": { "value": "50" } },
+    { "type": "wokwi-led", "id": "led1", "top": -60, "left": -110,
+      "attrs": { "color": "red" } },
+    { "type": "wokwi-resistor", "id": "r1", "top": -10, "left": -130,
+      "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "esp32:3V3", "dht1:VCC", "red", [] ],
+    [ "esp32:GND.1", "dht1:GND", "black", [] ],
+    [ "esp32:15", "dht1:SDA", "green", [] ],
+
+    [ "esp32:3V3", "pot1:VCC", "red", [] ],
+    [ "esp32:GND.2", "pot1:GND", "black", [] ],
+    [ "esp32:34", "pot1:SIG", "blue", [] ],
+
+    [ "esp32:13", "r1:1", "orange", [] ],
+    [ "r1:2", "led1:A", "orange", [] ],
+    [ "led1:C", "esp32:GND.2", "black", [] ],
+
+    [ "esp32:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp32:RX", "$serialMonitor:TX", "", [] ]
+  ],
+  "dependencies": {}
+}

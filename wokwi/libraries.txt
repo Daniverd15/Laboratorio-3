@@ -1,0 +1,6 @@
+# Librerias para el proyecto Wokwi (ESP32 -> Azure IoT Central)
+# Wokwi las instala automaticamente al ejecutar el proyecto.
+PubSubClient
+DHT sensor library
+Adafruit Unified Sensor
+ArduinoJson@6.21.5
